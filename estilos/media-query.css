@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*Configurações p/ telas médias*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, #103a53, #789aaa);
@@ -31,6 +32,7 @@
     }
 }
 
+/*Configuração p/ telas grandes*/
 @media screen and (min-width: 992px) and (max-width: 1500px) {
     body {
         background-image: linear-gradient(to top, #103a53, #789aaa);
