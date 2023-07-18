@@ -7,17 +7,17 @@
 
     section#login {
         width: 80vw;
-        height: 70vh;
+        height: 300px;
     }
 
     div#imagem {
-        background-position: center top;
+        background-position: top center;
         float: left;
         width: 30%;
         height: 100%;
     }
 
-    div#formulatio {
+    div#formulario {
         float: right;
         width: 70%;
     }
@@ -38,24 +38,27 @@
 
     section#login {
         width: 950px;
+        height: 340px;
     }
 
     div#imagem {
         float: right;
-        width: 50%;
+        width: 40%;
         height: 100%;
     }
 
     div#formulario {
         float: left;
-        width: 50%;
+        width: 60%;
     }
 
     div#formulario > h1 {
+        padding: 7px;
         font-size: 2em;
     }
 
     div#formulario > p {
         font-size: 1.2em;
+        padding-bottom: 10px;
     }
 }

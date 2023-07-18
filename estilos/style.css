@@ -28,8 +28,8 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden; /*Tudo fora da borda fica 'escondido'*/
+    overflow: hidden; 
+    /*Tudo fora da borda fica 'escondido'*/
 
     background-color: white;
     width: 250px;
@@ -41,6 +41,9 @@ section#login {
     e o 'ease' suaviza */
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+
+    transform: translate(-50%, -50%);
+    /*Sempre deixar o transform por último*/
 }
 
 div#imagem {
@@ -62,6 +65,8 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+    padding-bottom: 5px;
+    text-align: justify;
 }
 
 label {
@@ -73,11 +78,31 @@ div.campo {
     width: 100%;
     height: 40px;
     background-color: #6a97ac;
-    color: #103a53;
+    border: 2px solid #6a97ac;
     border-radius: 5px;
     margin: 5px 0px;
 }
 
+div.campo > label {
+    display: none;
+}
+
+div.campo > i {
+    color: #103a53;
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 90%;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(-8.5px);
+    /*Sempre deixar o transform por último*/
+}
 
 input[type=submit] {
     display: block;
